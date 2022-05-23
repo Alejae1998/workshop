@@ -1,0 +1,23 @@
+.workshop {
+  width: 75vw;
+  border: 3px solid var(--color5);
+
+  padding: 20px;
+}
+.workshop li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.workshop li:hover {
+background-color: var(--color3);
+cursor: pointer;
+text-decoration: underline;
+}
+
+.workshop li:hover::after {
+  padding-left: 0px 5px;
+  content: 'emoji';
+}
