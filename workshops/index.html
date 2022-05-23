@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/workshops">
-  <title>Document</title>
-</head>
-<body>
-  <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="./workshop.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
         <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
+            <img src="../assets/big-logo.png" />
         </div>
-    </header>
-  <button id="logout">Logout</button>
-  <main>
-    <div class="workshop">
-      <h2>UnderWater Basket Weaving</h2>
-      <ul>
-        <li>Buster Bluth: buster@luthcompany.com</li>
-      </ul>
-    </div>
-  </main>
- <script type="module" src="./workshops.js"></script> 
-</body>
+    </header>    
+    <button id="logout">Logout</button>
+    <main>
+        <a href="../create/">Add participant</a>
+        <h1>All workshops:</h1>
+        <section class="workshops-list">
+
+        </section>
+        </main>
+        <script type="module" src="./workshops.js"></script>
+    </body>
 </html>

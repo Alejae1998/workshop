@@ -5,13 +5,13 @@ body {
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    /* --color5: hsla(170, 28%, 95% 1); */ */
 
-    /* --color1: hsla(45, 86%, 83%, 1);
+    --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+    --color5: hsla(224, 40%, 79%, 1);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -128,4 +128,25 @@ footer {
 
 .auth-container button {
     margin: 10px;
+}
+
+.workshop {
+    border: solid 1px black;
+    width: 100%;
+    margin: 40px;
+    padding: 10px;
+
+}
+
+label {
+    display: block;
+
+}
+
+.participant {
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.participant:hover {
+    background-color: pink;
 }

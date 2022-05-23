@@ -9,9 +9,12 @@ logoutBtn.addEventListener('click', () => {
     logout();
 });
 
+window.addEventListener('load', async () => {
+    displayWorkshops();
+});
 async function displayWorkshops() {
     const main = document.querySelector('main');
-    main.textContent + '';
+    main.textContent = '';
     const data = await getWorkshops();
     for (let workshop of data) {
         const workshopElem = renderWorkshop(workshop);
@@ -27,6 +30,8 @@ async function displayWorkshops() {
             });
             ul.append(li);
         }
+        workshopElem.append(ul);
+
         main.append(workshopElem);
     }
 }
