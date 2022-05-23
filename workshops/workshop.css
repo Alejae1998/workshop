@@ -1,4 +1,4 @@
-/* .workshop {
+.workshop {
   width: 75vw;
   border: 3px solid var(--color5);
 
@@ -20,4 +20,4 @@ text-decoration: underline;
 .workshop li:hover::after {
   padding-left: 0px 5px;
   content: '❌';
-} */
+}

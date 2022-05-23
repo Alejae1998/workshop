@@ -3,10 +3,11 @@
 
 import { checkAuth, logout, createParticipant, getWorkshops } from '../fetch-utils.js';
 import { renderOption } from '../render-utils.js';
-
+checkAuth();
 const workshopSelect = document.getElementById('workshops');
 const participantForm = document.getElementById('new-participant');
 const logoutBtn = document.getElementById('logout');
+
 
 logoutBtn.addEventListener('click', () => {
     logout();
